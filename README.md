@@ -8,20 +8,21 @@ A react application showcasing my recent projects and experience.
 
 Installing the application.
 
-`npm install`
+```npm install```
 
 ## Development
 
 Running the tests.
 
-`npm test`
+```npm test```
 
 Running the development server.
+The server will run at `http://localhost:3000`
 
-`npm start`
+```npm start```
 
 ## Production
 
 Building the application.
 
-`npm run build`
+```npm run build```
