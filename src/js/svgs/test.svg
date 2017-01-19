@@ -1,0 +1,6 @@
+<svg viewBox="0 0 240 240">
+  <rect x="0" y="0" fill="#7A7A78" width="120" height="120"></rect>
+  <rect x="0" y="120" fill="#F7D417" width="120" height="120"></rect>
+  <rect x="120" y="0" fill="#F7D417" width="120" height="120"></rect>
+  <rect x="120" y="120" fill="#FFFFFF" width="120" height="120"></rect>
+</svg>

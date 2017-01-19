@@ -1,0 +1,103 @@
+.testimonials {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 3rem;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 8rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.testimonialsSlider {
+  margin: 0 -1rem;
+}
+
+.list {
+  display: flex;
+  wrap: no-wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.listItem {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  opacity: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+
+  &--active {
+    composes: listItem;
+    opacity: 1;
+  }
+}
+
+.listItem--active {
+  composes: listItem;
+  opacity: 1;
+
+  & + li {
+    opacity: 1;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #f5f5f5;
+  color: #ccc;
+  outline: none;
+  cursor: pointer;
+}
+
+.disabledButton {
+  composes: button;
+  opacity: .5;
+}
+
+.previousButton {
+  composes: button;
+
+  left: 0rem;
+
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+.disabledPreviousButton {
+  composes: previousButton;
+  composes: disabledButton;
+}
+
+.nextButton {
+  composes: button;
+  right: 0rem;
+
+  svg {
+    transform: rotate(0deg);
+  }
+}
+
+.disabledNextButton {
+  composes: nextButton;
+  composes: disabledButton;
+}

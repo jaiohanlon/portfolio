@@ -1,0 +1,112 @@
+.socialLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #44444a;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: all 0.4s ease;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transform: scale(0);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  &:hover {
+    &:after {
+      transform: scale(1);
+    }
+  }
+
+  svg {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.facebookLogo {
+  composes: socialLogo;
+
+  &:hover,
+  &:after {
+    background-color: #3b5998;
+  }
+
+  svg {
+    transform: scale(.7);
+  }
+}
+
+.twitterLogo {
+  composes: socialLogo; 
+
+  &:hover,
+  &:after {
+    background-color: #1da1f2;
+  }
+
+  svg {
+    transform: scale(.7);
+  }
+}
+
+.linkedInLogo {
+  composes: socialLogo; 
+
+  &:hover,
+  &:after {
+    background-color: #0077b5;
+  }
+
+  svg {
+    transform: scale(.65);
+  }
+}
+
+.googlePlusLogo {
+  composes: socialLogo; 
+
+  &:hover,
+  &:after {
+    background-color: #dd4b39;
+  }
+
+  svg {
+    transform: scale(.85);
+  }
+}
+
+.youtubeLogo {
+  composes: socialLogo; 
+
+  &:hover,
+  &:after {
+    background-color: #cd201f;
+  }
+
+  svg {
+    transform: scale(.7);
+  }
+}
+
+.githubLogo {
+  composes: socialLogo; 
+
+  &:hover,
+  &:after {
+    background-color: #4078c0;
+  }
+
+  svg {
+    transform: scale(.8);
+  }
+}
