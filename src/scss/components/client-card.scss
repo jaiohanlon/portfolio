@@ -2,13 +2,15 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  border-radius: .2rem;
-  box-shadow: #eee 0 0 45px 2px;
+  background-color: #fff;
+  border-radius: .4rem;
+  box-shadow: #e5e5e5 0 0 100px 0px;
   overflow: hidden;
 }
 
 .header {
   display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -28,7 +30,7 @@
     background-color: #44444a;
     opacity: 0.5;
   }
-  
+
   svg {
     height: 3rem;
     max-width: 13rem;
@@ -42,15 +44,14 @@
   flex-direction: column;
   flex: 1;
   padding: 2rem;
-  border-radius: 0 0 .3rem .3rem;
-  border: 1px solid #f5f5f5;
+  border-radius: 0 0 .4rem .4rem;
 }
 
 .title {
   padding: 0;
   margin: 0 0 0 0;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .subTitle {
@@ -62,37 +63,41 @@
   letter-spacing: .05rem;
 }
 
-.technologiesList {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding: 0 0 1rem 0;
-  margin: 0 0 1rem 0;
-  border-bottom: 1px solid #f5f5f5;
-}
-
-.technologiesListItem {
-  font-size: .7rem;
-  font-weight: normal;
-  padding: .2rem .7rem;
-  margin-right: .3rem;
-  margin-bottom: .4rem;
-  border-radius: 2rem;
-  background-color: #eeeeef;
-}
-
 .description {
   flex: 1;
-  margin: 0 0 2rem;
+  padding: 0;
+  margin: 0 0 2rem 0;
   font-size: 1.2rem;
   font-weight: 300;
 }
 
+
+.technologiesList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0 -2rem 0 -2rem;
+  padding: 2rem 2rem 0rem 2rem;
+  border-top: 1px solid #f5f5fa;
+}
+
+.technologiesListItem {
+  font-size: .75rem;
+  font-weight: bold;
+  padding: .2rem .8rem;
+  margin: 0 .4rem .4rem 0;
+  border-radius: 2rem;
+  background-color: #f5f5fa;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
 .button {
   display: block;
+  display: none;
   text-decoration: none;
   position: relative;
-  letter-spacing: 0.5px;
+  letter-spacing: .8px;
   font-size: 1rem;
   cursor: pointer;
   text-transform: uppercase;
@@ -102,7 +107,7 @@
   border: none;
   border-radius: 3rem;
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
   transition: all 0.4s ease;
 
   &:before {

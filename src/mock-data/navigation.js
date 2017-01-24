@@ -1,8 +1,8 @@
 const navigation = {
   "links": [
     {
-      "label": "Home",
-      "href": "home"
+      "label": "Work",
+      "href": "work"
     },
     {
       "label": "About",
@@ -13,7 +13,7 @@ const navigation = {
       "href": "contact"
     }
   ],
-  "hireText": "Hire"
+  "hireText": "HIRE ME"
 };
 
 export default navigation;

@@ -98,7 +98,7 @@ const clientCards = {
       "backgroundImage": "https://images.unsplash.com/photo-1476966162421-d6f1dde41279?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="
     }
   ],
-  "buttonText": "about this project"
+  "buttonText": "explore"
 };
 
 export default clientCards;

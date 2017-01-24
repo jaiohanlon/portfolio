@@ -8,7 +8,6 @@ const Testimonial = ({
   title,
 }) => (
   <div className={styles.testimonial}>
-    <div className={styles.body} dangerouslySetInnerHTML={{__html: body}} />
     <div className={styles.identity}>
       <div className={styles.image} style={{backgroundImage: `url('${image}')`}} />
       <div className={styles.nameAndTitle}>
@@ -20,6 +19,7 @@ const Testimonial = ({
         </strong>
       </div>
     </div>
+    <div className={styles.body} dangerouslySetInnerHTML={{__html: body}} />
   </div>
 );
 

@@ -21,22 +21,15 @@ const ProfessionalProfile = ({
     <div className={styles.professionalProfile}>
       <div className={styles.wrapper}>
         <div className={styles.content}>
-          <h2 className={styles.title}>
-            {professionalBackgroundTitle}
-          </h2>
-          <h3 className={styles.subTitle}>
-            {professionalBackgroundSubTitle}
-          </h3>
+          <div className={styles.titleWrapper}>
+            <h2 className={styles.title}>
+              {professionalBackgroundTitle}
+            </h2>
+            <h3 className={styles.subTitle}>
+              {professionalBackgroundSubTitle}
+            </h3>
+          </div>
           <div className={styles.body} dangerouslySetInnerHTML={{__html: professionalBackgroundBody}} />
-        </div>
-        <div className={styles.content}>
-          <h2 className={styles.title}>
-            {professionalSkillsTitle}
-          </h2>
-          <h3 className={styles.subTitle}>
-            {professionalSkillsSubTitle}
-          </h3>
-          <ProfessionalSkillsCarousel />
         </div>
       </div>
     </div>

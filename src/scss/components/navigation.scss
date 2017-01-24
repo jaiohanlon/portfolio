@@ -19,10 +19,9 @@
 
 .logo {
   padding: .6rem 1.5rem;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 1rem;
   letter-spacing: .5px;
-  text-transform: uppercase;
   color: #44444a;
 }
 
@@ -46,10 +45,9 @@
   padding: .6rem 1.5rem;
   letter-spacing: 0.5px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 300;
   color: #44444a;
   cursor: pointer;
-  text-transform: uppercase;
   overflow: hidden;
   transition: all 0.3s ease;
 
@@ -69,7 +67,7 @@
 
   &:hover {
     color: #111;
-    
+
     &:before {
       opacity: 1;
       transform: translate3d(0, 0px, 0);
@@ -84,6 +82,7 @@
   color: #fff;
   border: none;
   border-radius: 3rem;
+  font-size: .8rem;
   font-weight: 600;
   margin-left: 1.5rem;
   overflow: visible;

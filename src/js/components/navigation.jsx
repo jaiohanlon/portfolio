@@ -8,7 +8,7 @@ const Navigation = ({
 }) => {
   const renderLogo = (
     <a className={styles.logo}>
-      J • O • F • O
+      Jai O'Hanlon
     </a>
   );
   const renderListItems = links.map(({label, href}) => (

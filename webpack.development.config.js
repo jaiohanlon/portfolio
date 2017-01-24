@@ -37,6 +37,10 @@ module.exports = {
         include: path.join(__dirname, 'src'),
       },
       {
+        test: /\.(png|jpg|gif)$/,
+        loader: "file-loader?name=img/img-[hash:6].[ext]"
+      },
+      {
         test: /\.scss$/,
         loaders: [
           'style-loader',
@@ -48,6 +52,9 @@ module.exports = {
                 importLoaders: 1,
                 localIdentName: '[hash:base64:5]',
               },
+            },
+            {
+              loader: 'resolve-url-loader',
             },
             {
               loader: 'sass-loader',

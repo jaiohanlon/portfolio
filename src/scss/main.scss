@@ -1,9 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Overpass:300,300i,400,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Overpass:100,100i,300,300i,400,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+
 
 body {
   margin: 0;
   font-family: 'Overpass', serif;
   color: #44444a;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 $bodyFontSize: 1.2rem;

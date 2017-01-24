@@ -6,8 +6,8 @@
   background-color: #44444a;
   color: #fff;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   transition: all 0.4s ease;
 
   &:after {
@@ -15,8 +15,8 @@
     display: block;
     position: absolute;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     transform: scale(0);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
@@ -47,7 +47,7 @@
 }
 
 .twitterLogo {
-  composes: socialLogo; 
+  composes: socialLogo;
 
   &:hover,
   &:after {
@@ -60,7 +60,7 @@
 }
 
 .linkedInLogo {
-  composes: socialLogo; 
+  composes: socialLogo;
 
   &:hover,
   &:after {
@@ -73,7 +73,7 @@
 }
 
 .googlePlusLogo {
-  composes: socialLogo; 
+  composes: socialLogo;
 
   &:hover,
   &:after {
@@ -86,7 +86,7 @@
 }
 
 .youtubeLogo {
-  composes: socialLogo; 
+  composes: socialLogo;
 
   &:hover,
   &:after {
@@ -99,7 +99,7 @@
 }
 
 .githubLogo {
-  composes: socialLogo; 
+  composes: socialLogo;
 
   &:hover,
   &:after {

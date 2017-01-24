@@ -28,12 +28,12 @@ const ClientCard = ({
         <h4 className={styles.subTitle}>
           {subTitle}
         </h4>
-        <ul className={styles.technologiesList}>
-          {renderTechnologiesListItems}
-        </ul>
         <p className={styles.description}>
           {description}
         </p>
+        <ul className={styles.technologiesList}>
+          {renderTechnologiesListItems}
+        </ul>
         <a className={styles.button} data-text={buttonText}></a>
       </footer>
     </div>
