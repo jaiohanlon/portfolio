@@ -1,15 +1,15 @@
 .testimonial {
   position: relative;
-  padding: 0 2rem;
+  padding: 2rem;
   border-radius: .4rem;
-  box-shadow: #e5e5e5 0 0 100px 0px;
+  box-shadow: #f5f5f5 0 0 100px 0px;
 }
 
 .identity {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1.5rem 0 .5rem 0;
+  padding: 0 0 1.5rem 0;
 }
 
 .image {
@@ -43,11 +43,9 @@
 
 .body {
   position: relative;
-  font-family: georgia;
   font-size: 1.3rem;
-  font-weight: normal;
-  font-style: italic;
-  padding: 0 0 2rem 5rem;
+  font-weight: 100;
+  padding: 0;
   margin: 0;
   letter-spacing: .02rem;
   line-height: 1.7;

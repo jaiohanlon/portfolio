@@ -8,7 +8,7 @@ import {
   LaveryRoweLogo,
 } from '../js/svgs/index';
 
-const clientCards = {
+const workCards = {
   "cards": [
     {
       "title": "Wonderbill",
@@ -101,4 +101,4 @@ const clientCards = {
   "buttonText": "explore"
 };
 
-export default clientCards;
+export default workCards;

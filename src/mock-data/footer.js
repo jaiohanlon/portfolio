@@ -1,7 +1,7 @@
 import React from 'react';
 
 const footer = {
-  "recentArticlesTitle": "Recent Articles",
+  "recentArticlesTitle": "Recent articles",
   "recentArticles": [
     {
       "title": "Working for Which?",
@@ -44,7 +44,7 @@ const footer = {
       "href": "/"
     }
   ],
-  "followMeTitle": "Follow Me",
+  "followMeTitle": "Follow me",
   "socialLinks": [
     {
       "name": "facebook",
@@ -77,10 +77,10 @@ const footer = {
       "href": "http://github.com"
     }
   ],
-  "myCompanyTitle": "FJ Creative",
+  "myCompanyTitle": "Contact me",
   "myCompanyLink": {
-    "label": "Vist fjcreative.uk",
-    "href": "/"
+    "label": "fjcreative.uk",
+    "href": "http://fjcreative.uk"
   },
 };
 

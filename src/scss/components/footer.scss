@@ -21,8 +21,10 @@
 }
 
 .title {
+  padding: 0;
+  margin: 0 0 1rem 0;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 100;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -56,14 +58,13 @@
   white-space: nowrap;
   text-decoration: none;
   color: #44444a;
-  padding: .3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.8rem;
   box-sizing: border-box;
 }
 
 .recentArticlesLinkTitle {
   padding: 0;
-  margin: 0;
+  margin: 0 0 .2rem 0;
   font-size: 1.3rem;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;

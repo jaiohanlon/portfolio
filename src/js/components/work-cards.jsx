@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
-import ClientCard from './client-card';
-import defaultProps from '../../mock-data/client-cards';
-import styles from '../../scss/components/client-cards';
+import ClientCard from './work-card';
+import defaultProps from '../../mock-data/work-cards';
+import styles from '../../scss/components/work-cards';
 
-const ClientCards = ({
+const WorkCards = ({
   cards,
   buttonText,
 }) => {
@@ -22,7 +22,7 @@ const ClientCards = ({
   ));
 
   return (
-    <section className={styles.clientCards}>
+    <section className={styles.workCards}>
       <div className={styles.wrapper}>
         <ul className={styles.list}>
           {renderCardsList}
@@ -32,7 +32,7 @@ const ClientCards = ({
   );
 };
 
-ClientCards.propTypes = {
+WorkCards.propTypes = {
   cards: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
@@ -42,6 +42,6 @@ ClientCards.propTypes = {
   buttonText: PropTypes.string,
 };
 
-ClientCards.defaultProps = defaultProps;
+WorkCards.defaultProps = defaultProps;
 
-export default ClientCards;
+export default WorkCards;

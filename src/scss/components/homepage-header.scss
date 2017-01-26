@@ -1,7 +1,7 @@
 .header {
   display: flex;
-  padding-top: 275px;
-  margin-bottom: 200px;
+  padding-top: 225px;
+  margin-bottom: 150px;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -13,11 +13,13 @@
 .particleCanvas {
   width: 100%;
   height: 100vh;
-  position: fixed!important;
+  position: absolute!important;
+  z-index: -1;
 }
 
 .wrapper {
   position: relative;
+  z-index: 2;
 }
 
 .titleWrapper {

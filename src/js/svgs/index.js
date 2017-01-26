@@ -10,4 +10,8 @@ export WonderbillLogo from './wonderbill-logo';
 export CoveyLogo from './covey-logo';
 export TribalLogo from './tribal-logo';
 export LaveryRoweLogo from './lavery-rowe-logo';
+export VolkswagenLogo from './volkswagen-logo';
+export EssoLogo from './esso-logo';
+export RedBullLogo from './red-bull-logo';
+export ExxonLogo from './exxon-logo';
 export ArrowIcon from './arrow-icon';

@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '../../scss/components/client-card';
+import styles from '../../scss/components/work-card';
 
-const ClientCard = ({
+const WorkCard = ({
   title,
   subTitle,
   description,
@@ -17,7 +17,7 @@ const ClientCard = ({
   ));
 
   return (
-    <div className={styles.clientCard}>
+    <div className={styles.workCard}>
       <header className={styles.header} style={{ backgroundImage: `url('${backgroundImage}')`}}>
         {logo}
       </header>
@@ -40,4 +40,4 @@ const ClientCard = ({
   );
 }
 
-export default ClientCard;
+export default WorkCard;

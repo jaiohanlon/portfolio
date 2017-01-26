@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 import Navigation from '../components/navigation';
 import HomepageHeader from '../components/homepage-header';
-import ClientCards from '../components/client-cards';
-import ProfessionalProfile from '../components/professional-profile';
+import WorkCards from '../components/work-cards';
+import ClientsTable from '../components/clients-table';
 import Testimonials from '../components/testimonials';
 import MapAndContactForm from '../components/map-and-contact-form';
 import Footer from '../components/footer';
@@ -26,12 +26,12 @@ const HomeView = ({
       mainText={headerMainText}
       subTextItems={headerSubTextItems}
     />
-    <ClientCards
+    <WorkCards
       titleText={clientsTitleText}
       subtitleText={clientsSubtitleText}
       clients={clients}
     />
-    <ProfessionalProfile />
+    <ClientsTable />
     <Testimonials />
     <MapAndContactForm
       contactFormTitleText={contactFormTitleText}
