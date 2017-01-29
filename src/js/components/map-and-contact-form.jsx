@@ -30,6 +30,8 @@ const StyledGoogleMap = withGoogleMap(({mapOptions, markers}) => (
 const MapAndContactForm = ({
   mapOptions,
   markers,
+  contactFormTitle,
+  contactFormSubTitle,
 }) => (
   <section className={styles.mapAndContactForm}>
     <StyledGoogleMap
@@ -43,7 +45,10 @@ const MapAndContactForm = ({
       markers={markers}
     />
     <div className={styles.wrapper}>
-      <ContactForm />
+      <ContactForm
+        title={contactFormTitle}
+        subTitle={contactFormSubTitle}
+      />
     </div>
   </section>
 );

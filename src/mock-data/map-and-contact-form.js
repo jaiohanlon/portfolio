@@ -23,7 +23,9 @@ const mapAndContactForm = {
       key: 'London',
       defaultAnimation: 2,
     }
-  ]
+  ],
+  "contactFormTitle": "Get in touch",
+  "contactFormSubTitle": "This form of contact is mainly for getting in touch regarding direct contract opportunities",
 };
 
 export default mapAndContactForm;
