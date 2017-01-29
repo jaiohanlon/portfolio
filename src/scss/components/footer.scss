@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   padding: 6rem;
 }
 
@@ -17,19 +17,33 @@
 }
 
 .recentArticles {
-  border-right: 1px solid #eee;
+  border-right: 1px solid #ddd;
 }
 
 .title {
   padding: 0;
-  margin: 0 0 1rem 0;
-  font-size: 2rem;
-  font-weight: 100;
-  -webkit-font-smoothing: antialiased;
+  margin: 0 0 0 0;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-indent: -0.2rem;
+}
+
+.subTitle {
+  padding: 0;
+  margin: 0 0 2rem 0;
+  font-size: .9rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .5px;
 }
 
 .recentArticlesTitle {
   composes: title;
+}
+
+.recentArticlesSubTitle {
+  composes: subTitle;
 }
 
 .recentArticlesList {
@@ -44,10 +58,6 @@
   width: 33.33%;
   padding: 0 3rem 0 0;
   box-sizing: border-box;
-
-  &:last-child {
-    padding: 0;
-  }
 }
 
 .recentArticlesLink {
@@ -59,14 +69,38 @@
   text-decoration: none;
   color: #44444a;
   margin-bottom: 1.8rem;
+  padding-bottom: .4rem;
   box-sizing: border-box;
+  border-bottom: 2px solid #ddd;
+  position: relative;
+  transition: all 0.3s ease;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    background: #ddd url("http://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-arrow-25.png&r=255&g=255&b=255") center center no-repeat;
+    background-size: 13px;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    border-bottom-color: #44444a;
+    &:after {
+      background-color: #44444a;
+    }
+  }
 }
 
 .recentArticlesLinkTitle {
   padding: 0;
-  margin: 0 0 .2rem 0;
+  margin: 0 0 0 0;
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 600;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -74,39 +108,124 @@
   padding: 0;
   margin: 0;
   font-size: .8rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: .5px;
+  font-weight: 300;
+  letter-spacing: .3px;
+}
+
+.recentArticlesViewAllLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: .2rem 0;
+  color: inherit;
+  font-size: .9rem;
+  font-weight: 300;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #44444a url("http://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-arrow-25.png&r=255&g=255&b=255") center center no-repeat;
+    background-size: 10px;
+    border-radius: 50%;
+    margin-left: .5rem;
+  }
 }
 
 .followMeAndMyCompany {
   flex: 0 0 20%;
-  margin-left: 2rem;
   box-sizing: border-box;
 }
 
 .followMe {
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid #eee;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #ddd;
 }
 
 .followMeTitle {
   composes: title;
 }
 
+.followMeSubTitle {
+  composes: subTitle;
+}
+
 .myCompanyTitle {
   composes: title;
 }
 
+.myCompanySubTitle {
+  composes: subTitle;
+}
+
+.myCompany {
+  padding-left: 3rem;
+}
+
 .myCompanyLink {
-  color: inherit;
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  padding: .2rem 0;
+  color: inherit;
+  font-size: .9rem;
+  font-weight: 300;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #44444a url("http://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-arrow-25.png&r=255&g=255&b=255") center center no-repeat;
+    background-size: 10px;
+    border-radius: 50%;
+    margin-left: .5rem;
+  }
 }
 
 .postFooter {
   display: flex;
   align-items: center;
-  background-color: #33333a;
+  justify-content: center;
+  background-color: #44444a;
   height: 4rem;
+}
+
+.seoLinksList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.seoLinksListItem {
+  display: flex;
+  align-items: center;
+
+  &:not(:first-child):before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: #aaa;
+  }
+}
+
+.seoLink {
+  color: #ddd;
+  text-decoration: none;
+  padding: .2rem .8rem;
+  font-size: .9rem;
+  font-weight: 300;
+}
+
+.copyrightText {
+  color: #ddd;
+  font-size: .9rem;
+  font-weight: 300;
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 
 const testimonials = {
+  "title": "Testimonials",
+  "subTitle": "Recommendations & Kind Words",
   "testimonials": [
     {
       "body": `<p>Jai has worked closely with lavery rowe for the last 5 years. We recently launched a fantastic new responsive website together that we're all very proud of. Hoping for many more years of partnership.</p>`,

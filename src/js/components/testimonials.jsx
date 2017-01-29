@@ -6,6 +6,8 @@ import defaultProps from '../../mock-data/testimonials';
 import styles from '../../scss/components/testimonials';
 
 const Testimonials = ({
+  title,
+  subTitle,
   testimonials,
 }) => {
   const renderTestimonialsListItems = (slides, activeIndex) => slides.map(({body, image, name, title}, index) => (
@@ -42,6 +44,14 @@ const Testimonials = ({
   return (
     <div className={styles.testimonials}>
       <div className={styles.wrapper}>
+        <div className={styles.heading}>
+          <h2 className={styles.title}>
+            {title}
+          </h2>
+          <h3 className={styles.subTitle}>
+            {subTitle}
+          </h3>
+        </div>
         <TestimonialsCarousel />
       </div>
     </div>
@@ -49,6 +59,8 @@ const Testimonials = ({
 }
 
 Testimonials.propTypes = {
+  title: PropTypes.string,
+  subTitle: PropTypes.string,
   testimonials: PropTypes.arrayOf(
     PropTypes.shape({
       body: PropTypes.string,

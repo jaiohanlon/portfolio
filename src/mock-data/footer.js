@@ -2,6 +2,7 @@ import React from 'react';
 
 const footer = {
   "recentArticlesTitle": "Recent articles",
+  "recentArticlesSubTitle": "Get an insight into why I do what I do",
   "recentArticles": [
     {
       "title": "Working for Which?",
@@ -44,7 +45,12 @@ const footer = {
       "href": "/"
     }
   ],
-  "followMeTitle": "Follow me",
+  "recentArticlesViewAllLink": {
+    "label": "View All Articles",
+    "href": "/",
+  },
+  "followMeTitle": "Get Social",
+  "followMeSubTitle": "Regular updates on everything",
   "socialLinks": [
     {
       "name": "facebook",
@@ -77,11 +83,27 @@ const footer = {
       "href": "http://github.com"
     }
   ],
-  "myCompanyTitle": "Contact me",
+  "myCompanyTitle": "Contact",
+  "myCompanySubTitle": "Looking to talk shop?",
   "myCompanyLink": {
-    "label": "fjcreative.uk",
-    "href": "http://fjcreative.uk"
+    "label": "Send me an Email",
+    "href": "mailto:contact@jaiohanlon.com"
   },
+  "seoLinks": [
+    {
+      "label": "London Software Engineer",
+      "href": "/",
+    },
+    {
+      "label": "London Developer",
+      "href": "/",
+    },
+    {
+      "label": "Leigh On Sea",
+      "href": "/",
+    }
+  ],
+  "copyrightText": "Jai O'Hanlon 2017",
 };
 
 export default footer;

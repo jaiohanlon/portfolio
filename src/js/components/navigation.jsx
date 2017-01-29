@@ -11,8 +11,8 @@ const Navigation = ({
       Jai O'Hanlon
     </a>
   );
-  const renderListItems = links.map(({label, href}) => (
-    <li className={styles.listItem}>
+  const renderListItems = links.map(({label, href}, index) => (
+    <li className={styles.listItem} key={index}>
       <a className={styles.link} href={href}>
         {label}
       </a>

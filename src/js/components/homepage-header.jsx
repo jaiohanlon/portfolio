@@ -15,8 +15,6 @@ export default class HomepageHeader extends Component {
       speed: 'medium',
       density: 'high'
     };
-
-    console.log(canvasDiv);
     var particleCanvas = new ParticleNetwork(canvasDiv, options);
   }
 

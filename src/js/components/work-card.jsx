@@ -10,8 +10,8 @@ const WorkCard = ({
   backgroundImage,
   buttonText,
 }) => {
-  const renderTechnologiesListItems = technologies.map((technology) => (
-    <li className={styles.technologiesListItem}>
+  const renderTechnologiesListItems = technologies.map((technology, index) => (
+    <li className={styles.technologiesListItem} key={index}>
       {technology}
     </li>
   ));
