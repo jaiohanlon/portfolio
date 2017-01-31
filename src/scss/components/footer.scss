@@ -17,7 +17,7 @@
 }
 
 .recentArticles {
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #e5e5e5;
 }
 
 .title {
@@ -50,7 +50,7 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 2rem 0;
   padding: 0;
 }
 
@@ -68,28 +68,41 @@
   white-space: nowrap;
   text-decoration: none;
   color: #44444a;
-  margin-bottom: 1.8rem;
-  padding-bottom: .4rem;
+  padding: 1rem 0;
   box-sizing: border-box;
-  border-bottom: 2px solid #ddd;
   position: relative;
   transition: all 0.3s ease;
 
-  &:after {
+  &:before {
     content: "";
     display: block;
-    width: 35px;
-    height: 35px;
     position: absolute;
-    bottom: -2px;
     right: 0;
-    background: #ddd url("http://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-arrow-25.png&r=255&g=255&b=255") center center no-repeat;
-    background-size: 13px;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: #e5e5e5;
+    transition: all 0.3s ease;
+  }
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    float: right;
+    margin-left: .5rem;
+    border-radius: 50%;
+    background: #44444a url("http://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-arrow-25.png&r=255&g=255&b=255") center center no-repeat;
+    background-size: 9px;
     transition: all 0.3s ease;
   }
 
   &:hover {
-    border-bottom-color: #44444a;
+    &:before {
+      height: 5px;
+      background-color: #44444a;
+    }
     &:after {
       background-color: #44444a;
     }
@@ -110,6 +123,7 @@
   font-size: .8rem;
   font-weight: 300;
   letter-spacing: .3px;
+  float: left;
 }
 
 .recentArticlesViewAllLink {
@@ -124,12 +138,11 @@
   &:after {
     content: "";
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: #44444a url("http://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-arrow-25.png&r=255&g=255&b=255") center center no-repeat;
+    width: 20px;
+    height: 20px;
+    background: url("http://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-arrow-25.png&r=64&g=64&b=64") center center no-repeat;
     background-size: 10px;
-    border-radius: 50%;
-    margin-left: .5rem;
+    margin-left: .2rem;
   }
 }
 
@@ -142,7 +155,7 @@
   padding-left: 3rem;
   padding-bottom: 3rem;
   margin-bottom: 3rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .followMeTitle {
@@ -177,12 +190,11 @@
   &:after {
     content: "";
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: #44444a url("http://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-arrow-25.png&r=255&g=255&b=255") center center no-repeat;
+    width: 20px;
+    height: 20px;
+    background: url("http://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-arrow-25.png&r=64&g=64&b=64") center center no-repeat;
     background-size: 10px;
-    border-radius: 50%;
-    margin-left: .5rem;
+    margin-left: .2rem;
   }
 }
 

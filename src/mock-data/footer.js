@@ -103,7 +103,7 @@ const footer = {
       "href": "/",
     }
   ],
-  "copyrightText": "Jai O'Hanlon 2017",
+  "copyrightText": "Designed, Coded & Concieved by Jai",
 };
 
 export default footer;

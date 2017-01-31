@@ -10,6 +10,7 @@
   width: 100%;
   max-width: 1280px;
   position: relative;
+  z-index: 1;
   justify-content: flex-end;
 }
 
@@ -17,7 +18,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
+  bottom: -25px;
   left: 0;
 }
 

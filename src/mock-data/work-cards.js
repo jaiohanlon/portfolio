@@ -13,13 +13,13 @@ const workCards = {
     {
       "title": "Wonderbill",
       "subTitle": "Senior Software Engineer",
-      "description": "Developing the product from MVP into a high quality platform...",
+      "description": "This is my next challenge so I'm not 100% sure what I'm doing yet - excited...",
       "technologies": [
         "React",
         "Redux",
-        "Webpack",
-        "ES6",
-        "React Native"
+        "...",
+        "...",
+        "..."
       ],
       "logo": <WonderbillLogo />,
       "backgroundImage": "https://images.unsplash.com/photo-1472457847783-3d10540b03d7?dpr=2&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop="
@@ -27,11 +27,13 @@ const workCards = {
     {
       "title": "Which?",
       "subTitle": "Senior Software Engineer",
-      "description": "Working across multiple teams to improve the implementation of React...",
+      "description": "Working across multiple teams to improve the implementation of React and es6...",
       "technologies": [
         "React",
         "Redux",
+        "Baobab",
         "Webpack",
+        "Webpack 2",
         "Rollup",
         "Gulp",
         "ES6",
@@ -43,7 +45,7 @@ const workCards = {
     {
       "title": "Covey",
       "subTitle": "Technology Lead",
-      "description": "Built a team and lead the development of Web App from scratch...",
+      "description": "Developed a React / Redux web app from the ground up brought on additional team members to continue growth...",
       "technologies": [
         "React",
         "Redux",
@@ -57,12 +59,14 @@ const workCards = {
     {
       "title": "Antiblanks",
       "subTitle": "Senior Software Engineer",
-      "description": "Built a team and lead the development of Web App from scratch...",
+      "description": "Developing a platform in React to handle the management of US ISA's...",
       "technologies": [
         "React",
         "Redux",
+        "Redux-Saga",
         "Webpack",
         "ES6",
+        "Angular",
         "React Native"
       ],
       "logo": <AntiblanksLogo />,
@@ -71,12 +75,14 @@ const workCards = {
     {
       "title": "Tribal Worldwide",
       "subTitle": "Senior Software Engineer",
-      "description": "Built a team and lead the development of Web App from scratch...",
+      "description": "Working on a variety of projects for clients including Volkswagen, Falabella and Esso...",
       "technologies": [
         "React",
-        "Redux",
-        "Webpack",
+        "Custom Flux",
+        "Gulp",
         "ES6",
+        "Laravel",
+        "Vue",
         "React Native"
       ],
       "logo": <TribalLogo />,
@@ -85,7 +91,7 @@ const workCards = {
     {
       "title": "Lavery Rowe",
       "subTitle": "Software Architect",
-      "description": "Built a team and lead the development of Web App from scratch...",
+      "description": "Developed an internal application to communicate between offices and the rest...",
       "technologies": [
         "React",
         "Redux",

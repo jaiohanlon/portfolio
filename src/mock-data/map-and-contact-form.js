@@ -1,5 +1,6 @@
 const mapAndContactForm = {
   "mapOptions": {
+    "disableDefaultUI": true,
     "mapTypeControl": false,
     "navigationControl": false,
     "scaleControl": false,

@@ -15,7 +15,7 @@ const pinIcon = {
 const StyledGoogleMap = withGoogleMap(({mapOptions, markers}) => (
   <GoogleMap
     defaultZoom={9}
-    defaultCenter={{ lat: 51.541371, lng: 0.5967206 }}
+    defaultCenter={{ lat: 51.541371, lng: 1.0567206 }}
     options={mapOptions}
   >
     {markers.map((marker, index) => (
